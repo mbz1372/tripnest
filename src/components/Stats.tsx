@@ -1,1 +1,0 @@
-import {kpis} from '@/lib/data';export function Stats(){return <div className='grid-auto'>{kpis.map(k=><div className='card p-6' key={k[0]}><p className='muted font-bold'>{k[0]}</p><b className='metric block mt-2'>{k[1]}</b><span className='text-mint font-black'>{k[2]}</span></div>)}</div>}

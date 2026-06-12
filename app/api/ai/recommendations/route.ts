@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {hotels} from '@/lib/data';export async function POST(req:Request){const body=await req.json().catch(()=>({}));return NextResponse.json({profile:body,recommendations:hotels.map((h,i)=>({...h,match:96-i*4,reasons:['budget_fit','travel_style','margin','availability']}))})}

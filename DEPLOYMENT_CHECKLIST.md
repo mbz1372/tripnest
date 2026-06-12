@@ -1,22 +1,10 @@
 # Deployment Checklist
 
 - [ ] `npm install`
-- [ ] `npm run dev`
-- [ ] بررسی `/fa`
-- [ ] بررسی `/en`
-- [ ] بررسی `/fa/admin`
 - [ ] `npm run build`
 - [ ] Push to GitHub
 - [ ] Import in Vercel
-- [ ] Deploy
-
-## خطاهای رایج
-اگر پورت 3000 اشغال بود:
-```bash
-npm run dev -- -p 3001
-```
-
-اگر PowerShell اجازه اجرای script نداد:
-```powershell
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-```
+- [ ] Confirm routes `/fa`, `/en`, `/fa/admin`, `/fa/hotels`
+- [ ] Add env vars when real APIs are attached
+- [ ] Connect PostgreSQL/Redis/Search in production phase
+- [ ] Enable analytics and error monitoring

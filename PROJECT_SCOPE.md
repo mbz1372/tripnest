@@ -1,30 +1,14 @@
 # Product Scope
 
-TripNest باید یک Super App سفر باشد، نه فقط سایت رزرو.
-
-## کاربر
-- کشف مقصد
-- برنامه‌ریزی سفر چندروزه
-- رزرو هتل
-- پرواز و تور
-- راهنمای محلی
-- همسفر
-- پروفایل، کیف پول، ووچر
-
-## ادمین
-- داشبورد مدیریتی
-- مدیریت هتل‌ها، نرخ، ظرفیت، پروایدر، قرارداد
-- مدیریت رزرو، کانفرم، ووچر، کنسلی
-- CMS برای صفحه خانه، مقصدها، بلاگ و FAQ
-- CRM رشد، سگمنت کاربر، کد تخفیف
-- مالی، کمیسیون، مارجین، تسویه
-
-## معماری آینده
-- Auth Service
-- Booking Service
-- Supply Service
-- Payment Service
-- CMS Service
-- Notification Service
-- AI Itinerary Service
-- BI/Event Tracking
+این نسخه روی خواسته‌های زیر پوشش می‌دهد:
+- Persian-first bilingual UX
+- OTA marketplace similar to Booking/Airbnb/IranHotelOnline/SnappTrip but AI-native
+- Hotel pages: gallery, map placeholder, rooms, dynamic pricing, AI summary, policies, reviews, FAQ
+- Supply operations for 3500 hotels
+- Provider monitoring: IHO, Lamasoo, NetMinder, Sepehr, ViHotel, Adotel
+- CRM RFNL, campaigns, loyalty, churn and push/SMS/Bale journeys
+- BI dashboard: Revenue, Margin, ADR, Occupancy, LOS, Booking Window, Funnel, Cancellation
+- Hotelier portal: rates, inventory, stop-sell, confirmations, contracts
+- Bots: Bale, Rubika, Telegram, WhatsApp
+- Security blueprint: RBAC, audit logs, WAF, 2FA, rate limiting
+- Payment blueprint: Zarinpal, IDPay, Stripe, Wallet, Refund

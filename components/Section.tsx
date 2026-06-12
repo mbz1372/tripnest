@@ -1,0 +1,2 @@
+export function Section({eyebrow,title,children}:{eyebrow?:string,title:string,children:React.ReactNode}){return <section className="page py-10"><div className="mb-7"><p className="font-bold text-brand">{eyebrow}</p><h2 className="max-w-3xl text-3xl font-black tracking-tight md:text-5xl">{title}</h2></div>{children}</section>}
+export function Card({children,className=''}:{children:React.ReactNode,className?:string}){return <div className={`glass rounded-[2rem] p-6 ${className}`}>{children}</div>}

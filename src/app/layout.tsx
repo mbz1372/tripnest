@@ -1,1 +1,0 @@
-import type {Metadata} from 'next';import './globals.css';export const metadata:Metadata={title:'TripNest Enterprise Pro',description:'Production-grade travel super app demo for GitHub and Vercel',manifest:'/manifest.json'};export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="fa"><body>{children}</body></html>}

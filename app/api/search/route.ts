@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {hotels} from '@/lib/data';export async function GET(){return NextResponse.json({ok:true,results:hotels,features:['semantic_search','landmark_search','persian_typo_tolerance','ai_ranking']})}

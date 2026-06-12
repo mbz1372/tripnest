@@ -1,0 +1,2 @@
+import {Nav} from '@/components/Nav';import {AdminShell} from '@/components/AdminShell';import {t} from '@/lib/i18n';
+export default function Admin({params}:{params:{locale:string}}){const d=t(params.locale);return <main className={d.dir==='rtl'?'rtl':'ltr'}><Nav locale={params.locale}/><AdminShell locale={params.locale}/></main>}
