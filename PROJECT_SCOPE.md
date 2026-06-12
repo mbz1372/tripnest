@@ -1,42 +1,30 @@
-# Product Scope - TripNest Super App
+# Product Scope
 
-## User App
-- Search city/location/hotel
-- Hotel booking flow
-- Flight search placeholder
-- Tour packages
-- Multi-day itinerary builder
-- Local guide request
-- Travel mate matching
-- Blog and SEO landing pages
-- Profile, discounts, saved trips, messages
-- Checkout and voucher
+TripNest باید یک Super App سفر باشد، نه فقط سایت رزرو.
 
-## Admin App
-- Dashboard KPIs
-- Hotels operations table
-- Bookings management placeholder
-- Itinerary CRUD placeholder
-- Guides management placeholder
-- CMS cards and content placeholder
-- Users and loyalty placeholder
+## کاربر
+- کشف مقصد
+- برنامه‌ریزی سفر چندروزه
+- رزرو هتل
+- پرواز و تور
+- راهنمای محلی
+- همسفر
+- پروفایل، کیف پول، ووچر
 
-## Architecture
-- Next.js 14 App Router
-- TypeScript
-- Tailwind CSS
-- Static demo data for offline/Vercel-safe deployment
-- Ready to replace data layer with database/API
-- Bilingual route structure: `/fa`, `/en`
+## ادمین
+- داشبورد مدیریتی
+- مدیریت هتل‌ها، نرخ، ظرفیت، پروایدر، قرارداد
+- مدیریت رزرو، کانفرم، ووچر، کنسلی
+- CMS برای صفحه خانه، مقصدها، بلاگ و FAQ
+- CRM رشد، سگمنت کاربر، کد تخفیف
+- مالی، کمیسیون، مارجین، تسویه
 
-## Future Real Production Services
-- Auth service: OTP mobile/email
-- Booking service
-- Payment service
-- Voucher service
-- Hotel provider connector service
-- Flight connector service
-- Notification service
-- CMS service
-- BI/Analytics service
-- RBAC/Admin permission service
+## معماری آینده
+- Auth Service
+- Booking Service
+- Supply Service
+- Payment Service
+- CMS Service
+- Notification Service
+- AI Itinerary Service
+- BI/Event Tracking

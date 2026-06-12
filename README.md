@@ -1,58 +1,58 @@
-# TripNest Enterprise Offline V26
+# TripNest Enterprise Offline V26 Pro
 
-نسخه کامل‌تر سوپر اپ سفر، آماده Upload در GitHub و Deploy روی Vercel.
+این نسخه دیگر یک HTML ساده نیست؛ یک اسکلت محصولی کامل برای سوپر اپ سفر است که می‌توانی مستقیم در GitHub آپلود کنی و روی Vercel بالا بیاوری.
 
-## ماژول‌ها
-- صفحه خانه حرفه‌ای دو زبانه FA/EN
-- Hotel Marketplace با فیلتر و کارت رزرو
-- Flight Search دمو
-- Tours & Experiences
-- AI Itinerary Builder
-- Local Guides
-- Travel Mate
-- Blog & SEO CMS
-- User Profile
-- Checkout
-- Voucher
-- Admin Control Center
-- PWA manifest
-- RTL/LTR و طراحی Responsive
+## شامل چه چیزهایی است؟
+- Next.js 14 App Router + TypeScript + Tailwind
+- مسیرهای دو زبانه `/fa` و `/en` با RTL/LTR
+- صفحه اصلی Product-grade با Hero، جستجو، KPI، مقصدها، ماژول‌ها و Roadmap
+- Marketplace هتل با فیلتر، کارت رزرو، پروایدر، وضعیت Liveability و Checkout
+- پرواز، تور، برنامه‌ساز سفر، راهنمای محلی، همسفر، بلاگ/SEO
+- پروفایل، کیف پول، علاقه‌مندی، ووچر و Checkout
+- Admin Operating System شامل Supply OS، Booking Ops، CMS، Growth، Finance، Guide Hub
+- دیتای دمو Offline و قابل اجرا بدون دیتابیس
+- آماده اتصال بعدی به Auth، DB، Payment، Provider Connector و BI
 
-## اجرا روی سیستم
+## اجرا
 ```bash
 npm install
 npm run dev
 ```
-سپس:
-```bash
+
+آدرس‌ها:
+```txt
 http://localhost:3000/fa
 http://localhost:3000/en
 http://localhost:3000/fa/admin
 ```
 
-## Build تست قبل از آپلود
+## تست Build قبل از Vercel
 ```bash
 npm run build
 ```
 
-## آپلود در GitHub
+## GitHub
 ```bash
 git init
 git add .
-git commit -m "Initial TripNest Enterprise Offline V26"
+git commit -m "TripNest Enterprise Offline V26 Pro"
 git branch -M main
 git remote add origin YOUR_REPO_URL
 git push -u origin main
 ```
 
-## Deploy روی Vercel
-1. وارد Vercel شو.
-2. Add New Project را بزن.
-3. همین Repository را Import کن.
-4. Framework باید Next.js باشد.
-5. Build Command: `npm run build`
-6. Output Directory را خالی بگذار.
-7. Deploy را بزن.
+## Vercel
+- New Project
+- Import GitHub repository
+- Framework: Next.js
+- Build Command: `npm run build`
+- Output: پیش‌فرض Next.js
 
-## نکته مهم
-این نسخه بدون دیتابیس خارجی هم بالا می‌آید و تمام دیتاها داخل `src/lib/data.ts` هستند. برای نسخه واقعی بعدی می‌توانی PostgreSQL/Supabase/Neon، Auth، پرداخت، Provider API و CMS واقعی اضافه کنی.
+## مرحله بعد برای Production واقعی
+1. PostgreSQL + Prisma
+2. NextAuth یا OTP موبایل
+3. Payment Gateway
+4. Hotel/Flight provider connectors
+5. فایل آپلود CMS
+6. BI dashboard و event tracking
+7. Role/Permission واقعی پنل ادمین
