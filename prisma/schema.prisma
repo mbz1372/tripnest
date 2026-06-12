@@ -1,0 +1,6 @@
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "sqlite" url = env("DATABASE_URL") }
+model Hotel { id Int @id @default(autoincrement()) name String city String grade String price Int provider String status String @default("active") createdAt DateTime @default(now()) }
+model Trip { id Int @id @default(autoincrement()) title String city String days Int budget Int createdAt DateTime @default(now()) }
+model Guide { id Int @id @default(autoincrement()) name String city String specialty String active Boolean @default(true) }
+model Post { id Int @id @default(autoincrement()) title String slug String @unique body String published Boolean @default(false) }

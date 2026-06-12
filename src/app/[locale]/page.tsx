@@ -1,0 +1,2 @@
+import {Hero} from '@/components/Hero';import {features,Locale} from '@/lib/data';import {CheckCircle2} from 'lucide-react';
+export default function Home({params}:{params:{locale:Locale}}){return <><Hero locale={params.locale}/><section className="containerx pb-16"><div className="grid md:grid-cols-4 gap-4">{features.map(f=><div className="card p-5" key={f}><CheckCircle2 className="text-mint-500"/><p className="font-bold mt-3">{f}</p></div>)}</div></section></>}

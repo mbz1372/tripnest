@@ -1,0 +1,1 @@
+export default function Mate(){return <section className="containerx py-12"><h1 className="text-4xl font-black text-brand-900">همسفر</h1><div className="card p-6 mt-8"><p className="text-slate-600">کاربر می‌تواند مسیر، تاریخ، بودجه و سبک سفر خود را ثبت کند و همسفر مناسب پیدا کند.</p><button className="btn btn-primary mt-5">ثبت درخواست همسفر</button></div></section>}
