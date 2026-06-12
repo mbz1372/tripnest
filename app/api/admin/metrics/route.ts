@@ -1,1 +1,0 @@
-import {NextResponse} from 'next/server';import {metrics,opsAlerts,providers} from '@/lib/data';export async function GET(){return NextResponse.json({metrics,opsAlerts,providers})}

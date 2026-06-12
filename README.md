@@ -1,6 +1,6 @@
-# TripNest Enterprise V27 — AI Travel SuperApp
+# TripJet Vercel Pro
 
-نسخه طراحی‌شده بر اساس مگاپرامپت محصول: OTA + Hotel Ecosystem + CRM + BI + Hotelier + Operations + PWA.
+نسخه آماده استقرار روی Vercel با Next.js 14، طراحی RTL/LTR، صفحه اصلی، لیست تورها، جزئیات تور، ساخت پکیج، درباره ما و تماس.
 
 ## اجرا
 ```bash
@@ -8,29 +8,14 @@ npm install
 npm run dev
 ```
 
-## Deploy روی Vercel
-1. پروژه را در GitHub آپلود کن.
-2. در Vercel گزینه New Project را بزن.
-3. Framework باید Next.js تشخیص داده شود.
-4. Build Command: `npm run build`
-5. Output نیازی به تنظیم ندارد.
+## استقرار روی Vercel
+1. پروژه را در GitHub آپلود کنید.
+2. در Vercel گزینه New Project را بزنید.
+3. ریپازیتوری را انتخاب کنید.
+4. Framework باید Next.js باشد.
+5. Deploy را بزنید.
 
-## مسیرهای مهم
-- `/fa` و `/en`
-- `/fa/hotels`
-- `/fa/hotels/homa-shiraz`
-- `/fa/planner`
-- `/fa/admin`
-- `/fa/hotelier`
-- `/fa/operations`
-- `/fa/crm`
-- `/fa/bi`
-
-## ماژول‌ها
-- AI Search & Recommendations
-- Hotel Marketplace
-- Flight/Tour/Guide/Travel Mate
-- Checkout/Voucher/Profile
-- Admin OS: Supply, CRM, BI, Provider, Growth, Support
-- PWA + Manifest
-- API Mock routes for future backend integration
+## Build
+```bash
+npm run build
+```

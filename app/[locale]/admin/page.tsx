@@ -1,3 +1,0 @@
-import {Nav} from '@/components/Nav';
-type PageProps={params:Promise<{locale:string;id:string}>};import {AdminShell} from '@/components/AdminShell';import {t} from '@/lib/i18n';
-export default async function Admin(props: PageProps){const params=await props.params;const d=t(params.locale);return <main className={d.dir==='rtl'?'rtl':'ltr'}><Nav locale={params.locale}/><AdminShell locale={params.locale}/></main>}

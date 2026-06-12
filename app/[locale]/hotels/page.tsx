@@ -1,3 +1,0 @@
-import {Nav} from '@/components/Nav';
-type PageProps={params:Promise<{locale:string;id:string}>};import {Section} from '@/components/Section';import {HotelCard} from '@/components/HotelCard';import {hotels} from '@/lib/data';import {t} from '@/lib/i18n';
-export default async function Hotels(props: PageProps){const params=await props.params;const d=t(params.locale);return <main className={d.dir==='rtl'?'rtl':'ltr'}><Nav locale={params.locale}/><Section eyebrow="Hotel Marketplace" title={params.locale==='fa'?'مارکت‌پلیس هتل با جستجوی AI و Provider Status':'AI hotel marketplace with provider intelligence'}><div className="grid-auto">{hotels.map(h=><HotelCard h={h} locale={params.locale} key={h.id}/>)}</div></Section></main>}

@@ -1,1 +1,2 @@
-import { redirect } from 'next/navigation'; export default function Page(){ redirect('/fa'); }
+import TripJetClient from '@/components/TripJetClient';
+export default function Page(){return <TripJetClient/>}
