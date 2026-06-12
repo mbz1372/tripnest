@@ -1,0 +1,2 @@
+import {PageHero} from '@/components/PageHero';
+export default function About(){return <><PageHero title="About TripNest" sub="چشم‌انداز محصول، بازار هدف، ساختار فنی، تجربه کاربری و مسیر توسعه سوپر اپ سفر."/><section className="containerx section grid-auto">{['Vision','Product Strategy','Tech Architecture','Go To Market'].map(x=><div className="card p-7" key={x}><h2 className="text-2xl font-black text-navy">{x}</h2><p className="muted mt-3 leading-8">این بخش برای ارائه به سرمایه‌گذار، تیم فنی و توسعه محصول آماده شده است.</p></div>)}</section></>}

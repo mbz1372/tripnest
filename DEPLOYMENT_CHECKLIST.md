@@ -1,29 +1,28 @@
-# چک‌لیست دیپلوی
+# Deployment Checklist
 
-1. داخل پوشه پروژه:
+- [ ] `npm install`
+- [ ] `npm run dev`
+- [ ] Check `/fa`
+- [ ] Check `/en`
+- [ ] Check `/fa/admin`
+- [ ] `npm run build`
+- [ ] Push to GitHub
+- [ ] Import in Vercel
+- [ ] Build command: `npm run build`
+- [ ] Deploy
+
+## Common fixes
+If port 3000 is busy:
+```bash
+npm run dev -- -p 3001
+```
+
+If PowerShell blocks scripts:
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+If install is slow, delete `node_modules` and `package-lock.json`, then run:
 ```bash
 npm install
-cp .env.example .env
-npx prisma generate
-npm run dev
 ```
-2. GitHub:
-```bash
-git init
-git add .
-git commit -m "Initial TripNest Enterprise"
-git branch -M main
-git remote add origin YOUR_REPO_URL
-git push -u origin main
-```
-3. Vercel:
-- Import GitHub Repository
-- Framework: Next.js
-- Build Command: npm run build
-- Output: پیش‌فرض Next.js
-- Environment Variables: فعلاً `DATABASE_URL=file:./dev.db` برای تست؛ برای production بهتر است PostgreSQL قرار بدهی.
-
-4. بعد از Deploy:
-- مسیر `/fa` را تست کن.
-- مسیر `/en` را تست کن.
-- مسیر `/fa/admin` را تست کن.

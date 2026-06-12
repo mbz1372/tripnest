@@ -1,0 +1,2 @@
+import {PageHero} from '@/components/PageHero';
+export default function Contact(){return <><PageHero title="Contact & Support" sub="فرم تماس، پشتیبانی رزرو، همکاری هتل‌ها، همکاری راهنماها و درخواست اتصال پروایدر."/><section className="containerx section"><div className="card p-7 max-w-2xl mx-auto grid gap-3"><input className="input" placeholder="نام"/><input className="input" placeholder="موبایل / ایمیل"/><textarea className="input" rows={5} placeholder="پیام"/><button className="btn btn-primary">ارسال</button></div></section></>}

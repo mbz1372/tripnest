@@ -1,0 +1,2 @@
+import {Header} from './Header';import {Locale} from '@/lib/data';
+export function Shell({locale,children}:{locale:Locale,children:React.ReactNode}){return <div className={locale==='fa'?'rtl':'ltr'}><Header locale={locale}/>{children}<footer className="containerx section"><div className="card p-8 grid md:grid-cols-4 gap-6"><div><b className="text-2xl text-navy">TripNest</b><p className="muted mt-3">Enterprise Offline V26 آماده GitHub و Vercel</p></div><p>Hotel + Flight + Tour</p><p>Admin CMS + PWA</p><p>Made for Iran travel market</p></div></footer></div>}

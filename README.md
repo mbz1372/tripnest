@@ -1,28 +1,58 @@
-# TripNest Enterprise
+# TripNest Enterprise Offline V26
 
-سوپر اپ سفر دو زبانه برای برنامه‌ریزی سفر، هتل، پرواز، راهنمای محلی، همسفر، بلاگ و پنل ادمین.
+نسخه کامل‌تر سوپر اپ سفر، آماده Upload در GitHub و Deploy روی Vercel.
 
-## اجرا
+## ماژول‌ها
+- صفحه خانه حرفه‌ای دو زبانه FA/EN
+- Hotel Marketplace با فیلتر و کارت رزرو
+- Flight Search دمو
+- Tours & Experiences
+- AI Itinerary Builder
+- Local Guides
+- Travel Mate
+- Blog & SEO CMS
+- User Profile
+- Checkout
+- Voucher
+- Admin Control Center
+- PWA manifest
+- RTL/LTR و طراحی Responsive
+
+## اجرا روی سیستم
 ```bash
 npm install
-cp .env.example .env
-npx prisma generate
 npm run dev
 ```
+سپس:
+```bash
+http://localhost:3000/fa
+http://localhost:3000/en
+http://localhost:3000/fa/admin
+```
 
-## دیپلوی روی Vercel
-1. پروژه را در GitHub آپلود کن.
-2. در Vercel گزینه Import Project را بزن.
-3. Framework: Next.js.
-4. برای نسخه دمو نیاز به دیتابیس خارجی نیست. برای نسخه Production، `DATABASE_URL` را به PostgreSQL تغییر بده.
-5. Build Command: `npm run build`.
+## Build تست قبل از آپلود
+```bash
+npm run build
+```
 
-## صفحات اصلی
-- `/fa` خانه فارسی
-- `/en` خانه انگلیسی
-- `/fa/hotels` هتل‌ها
-- `/fa/itinerary` برنامه‌ساز سفر
-- `/fa/guides` راهنمای محلی
-- `/fa/travel-mate` همسفر
-- `/fa/blog` بلاگ
-- `/fa/admin` پنل مدیریت دمو
+## آپلود در GitHub
+```bash
+git init
+git add .
+git commit -m "Initial TripNest Enterprise Offline V26"
+git branch -M main
+git remote add origin YOUR_REPO_URL
+git push -u origin main
+```
+
+## Deploy روی Vercel
+1. وارد Vercel شو.
+2. Add New Project را بزن.
+3. همین Repository را Import کن.
+4. Framework باید Next.js باشد.
+5. Build Command: `npm run build`
+6. Output Directory را خالی بگذار.
+7. Deploy را بزن.
+
+## نکته مهم
+این نسخه بدون دیتابیس خارجی هم بالا می‌آید و تمام دیتاها داخل `src/lib/data.ts` هستند. برای نسخه واقعی بعدی می‌توانی PostgreSQL/Supabase/Neon، Auth، پرداخت، Provider API و CMS واقعی اضافه کنی.

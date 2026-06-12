@@ -1,29 +1,42 @@
-# محدوده کامل محصول TripNest Enterprise
+# Product Scope - TripNest Super App
 
-این نسخه برای آپلود در GitHub و Deploy روی Vercel آماده شده و همه نیازهای مطرح‌شده تا این مرحله را به‌صورت MVP توسعه‌پذیر پوشش می‌دهد:
+## User App
+- Search city/location/hotel
+- Hotel booking flow
+- Flight search placeholder
+- Tour packages
+- Multi-day itinerary builder
+- Local guide request
+- Travel mate matching
+- Blog and SEO landing pages
+- Profile, discounts, saved trips, messages
+- Checkout and voucher
 
-## کاربر نهایی
-- صفحه خانه دو زبانه فارسی/انگلیسی
-- جستجوی مقصد و هتل
-- لیست هتل‌ها با شهر، گرید، قیمت، امتیاز و پروایدر
-- برنامه‌ساز سفر چندروزه
-- راهنمای محلی و درخواست تجربه اختصاصی
-- همسفر
-- بلاگ و صفحات SEO
-- ساختار PWA-ready و mobile-first
+## Admin App
+- Dashboard KPIs
+- Hotels operations table
+- Bookings management placeholder
+- Itinerary CRUD placeholder
+- Guides management placeholder
+- CMS cards and content placeholder
+- Users and loyalty placeholder
 
-## پنل ادمین
-- داشبورد مدیریت هتل‌ها
-- مدیریت برنامه‌های سفر
-- مدیریت راهنماهای محلی
-- مدیریت محتوا و بلاگ
-- جایگاه توسعه برای Hero، کارت‌ها، بنرها، FAQ، شهرها و صفحات landing
+## Architecture
+- Next.js 14 App Router
+- TypeScript
+- Tailwind CSS
+- Static demo data for offline/Vercel-safe deployment
+- Ready to replace data layer with database/API
+- Bilingual route structure: `/fa`, `/en`
 
-## توسعه واقعی بعدی
-- اتصال دیتابیس PostgreSQL روی Vercel/Supabase/Neon
-- Auth با OTP موبایل/ایمیل
-- پرداخت آنلاین
-- اتصال به Providerها
-- سیستم رزرو واقعی و voucher
-- مدیریت تخفیف، notification و گزارش BI
-- نقش‌ها و دسترسی‌ها RBAC
+## Future Real Production Services
+- Auth service: OTP mobile/email
+- Booking service
+- Payment service
+- Voucher service
+- Hotel provider connector service
+- Flight connector service
+- Notification service
+- CMS service
+- BI/Analytics service
+- RBAC/Admin permission service
